@@ -14,7 +14,7 @@ def hello():
         pred = m.flower_prediction(sepal_l, sepal_w, petal_l, petal_w)
         
 
-    return render_template("index.html",newpred=pred)
+    return render_template("index.html")
 
 
 
