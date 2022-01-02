@@ -2,11 +2,11 @@ from flask import Flask ,render_template,request
 import iris as m
 
 app=Flask(__name__)
-
+pred=0
 @app.route("/",methods=['GET','POST'])
 def hello():
     if request.method == 'POST':
-
+        global pred
         sepal_l=request.form['sepal_length']
         sepal_w=request.form['sepal_width']
         petal_l=request.form['petal_length']
